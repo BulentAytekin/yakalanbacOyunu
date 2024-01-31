@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable name="mainActivityNesnesi" type="com.example.kennyyakalamaoyunu.MainActivity" />
+    <variable name="timel" type="String" />
+    <variable name="scorel" type="String" />
+
+
+
+</data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/anaConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="@{timel}"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="@{scorel}"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTime" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textScore"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageKenny2"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k2"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.045"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny1"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k1"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.045"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny3"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k3"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.045"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny5"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k5"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.528"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny4"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k4"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.528"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny6"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k6"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.528"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny8"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k8"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.956"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny7"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k7"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.954"
+                app:srcCompat="@drawable/kenny" />
+
+            <ImageView
+                android:id="@+id/imageKenny9"
+                android:layout_width="100dp"
+                android:layout_height="135dp"
+                android:contentDescription="k9"
+                android:onClick="skorArttir"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.956"
+                app:srcCompat="@drawable/kenny" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
